@@ -7,7 +7,7 @@ export async function GET(req) {
 
         return NextResponse.json({
             success: true,
-            data: [{ email: "jk770225@gmail.com" }] || data,
+            data:data || [{ email: "jk770225@gmail.com" }],
             message: "Successfully fetched user data",
         });
     } catch (error) {
